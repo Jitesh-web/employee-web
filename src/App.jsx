@@ -79,7 +79,6 @@ function App() {
   const getAllEmployees = () => {
     const response = Axios.get("http://localhost:8087/employees");
     response.then((res) => {
-      //console.log(res.data);
       setEmployees(res.data);
     });
   };
